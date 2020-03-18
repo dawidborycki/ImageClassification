@@ -1,15 +1,15 @@
 import cv2 as opencv
 
 # Strings
-capture_failed = "Capture failed"
+CAPTURE_FAILED = "Capture failed"
 
 # Colors (BGR)
-green = (0, 255, 0)
+GREEN = (0, 255, 0)
 
 # Image labeling parameters
-preview_window_name = "Labeled image"
-text_origin = (5, 20)
-font_face = opencv.FONT_HERSHEY_PLAIN
-font_scale = 2
-font_thickness = 3
-font_line = opencv.LINE_AA
+PREVIEW_WINDOW_NAME = "Labeled image"
+TEXT_ORIGIN = (5, 20)
+FONT_FACE = opencv.FONT_HERSHEY_PLAIN
+FONT_SCALE = 2
+FONT_THICKNESS = 3
+FONT_LINE = opencv.LINE_AA

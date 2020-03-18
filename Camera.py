@@ -20,20 +20,20 @@ class Camera(object):
 
         else:
             # Print error to the console
-            print(common.capture_failed)
+            print(common.CAPTURE_FAILED)
 
     def display_image_with_label(self, image, label):
-        # Put label on the imagee
+        # Put label on the image
         image_with_label = opencv.putText(image, label, 
-                                          common.text_origin, 
-                                          common.font_face, 
-                                          common.font_scale, 
-                                          common.green,
-                                          common.font_thickness,
-                                          common.font_line)
+                                          common.TEXT_ORIGIN, 
+                                          common.FONT_FACE, 
+                                          common.FONT_SCALE, 
+                                          common.GREEN,
+                                          common.FONT_THICKNESS,
+                                          common.FONT_LINE)
 
         # Display image
-        opencv.imshow(common.preview_window_name, image_with_label)
+        opencv.imshow(common.PREVIEW_WINDOW_NAME, image_with_label)
             
         # Wait until user presses any key
         opencv.waitKey()  
